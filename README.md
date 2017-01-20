@@ -19,7 +19,7 @@ De mest nyttige argumenter når du starter Matlab – altså, det du skriver eft
 * `-logfile minLogFil.txt`: Gem et kopi af alt som er skrevet til terminalen i filen `minLogFil.txt`.
 * `-r "minKommando; quit"`: Indholdet af `" "` er de kommandoer som bliver kørt når matlab er startet. `quit` er tilføjet for at lukke Matlab når kommandoen `minKOmmando` har regnet færdig.
 
-## screen – log ud af serveren mens din simulering stadig kører
+## screen – log ud af serveren imens din simulering stadig kører
 
 * `screen -list` eller `scren ls`: List eksisterende screen-sessioner
 * `screen -R mitSessionsNavn`: Lav sessionen _mitSessionsNavn_ hvis den ikke allerede findes. Hvis den findes, så forbind til den. Bemærk: Hvis du forbinder til en session på denne måde, men skriver sessionsnavnet forkert, så laver du selvfølgelig en ny session, og det kan godt blive forvirrende!
