@@ -2,8 +2,8 @@
 
 ## sshfs – mount server mappe på lokal mappe
 
-* `mountrock`: Servermappen `~/lscr_rock/lmx682_gertrud` er nu mountet til (dvs. synkroniseret med) din lokale computer med stien `~/rockmnt`.
-* `Unmountrock`: Luk for forbindelsen til serveren, som du åbnede med `mountrock`. Det er en god idé at lukke alle (lokalt) åbne filer, som ligger i `~/mntrock`, inden du unmounter.
+* `rockMount`: Servermappen `~/lscr_rock/lmx682_gertrud` er nu mountet til (dvs. synkroniseret med) din lokale computer med stien `~/rock`.
+* `rockUnmount`: Luk for forbindelsen til serveren, som du åbnede med `rockMount`. Det er en god idé at lukke alle (lokalt) åbne filer, som ligger i `~/rock`, inden du unmounter.
 
 ## ssh – log ind på serveren med en terminal
 
