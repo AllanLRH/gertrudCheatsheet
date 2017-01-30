@@ -17,7 +17,7 @@ De mest nyttige argumenter når du starter Matlab – altså, det du skriver eft
 * `-nodesktop`: Alternativ til ovenstående; start Java, men lad være med at starte den grafiske brugerflade
 * `-nodisplay`: Igen et alternativ, og muligvis den bedste løsning, ift. at få Matlab til at gemme plots, til trods for at der ikke er nogen skærm sluttet til serveren – se [denne forumtråd][forumtråd1], evt. også [denne][forumtråd2] og [denne][forumtråd3].
 * `-logfile minLogFil.txt`: Gem et kopi af alt som er skrevet til terminalen i filen `minLogFil.txt`.
-* `-r "minKommando; quit"`: Indholdet af `" "` er de kommandoer som bliver kørt når matlab er startet. `quit` er tilføjet for at lukke Matlab når kommandoen `minKOmmando` har regnet færdig.
+* `-r "minKommando; quit"`: Indholdet af `" "` er de kommandoer som bliver kørt når matlab er startet. `quit` er tilføjet for at lukke Matlab når kommandoen `minKommando` har regnet færdig.
 
 ## screen – log ud af serveren imens din simulering stadig kører
 
