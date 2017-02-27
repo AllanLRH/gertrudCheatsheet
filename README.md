@@ -35,7 +35,7 @@ De mest nyttige argumenter når du starter Matlab – altså, det du skriver eft
 
 * `pwd`: Print working Directory, dvs. hvilken mappe står jeg i.
 * `mkdir minNyeMappe`, `mkdir -p meget/dyb/mappe/struktur`, : Opret mappen _minNyeMappe_, opret mappe-træet _meget/dyb/mappe/struktur_ med én kommando.
-`cp minOriginal minKopi`, `cp -r minOriginaleMappe minKopieredeMappe`: Kopier filer, husk `-r` hvis du kopierer en mappe. Du kan kopiere filen/mappen til en anden mappe ved at skrive den nye sti foran _minKopi_ eller _minKopieredeMappe_, fx `../minKopieredeMappe` for at kopiere mappen til niveauet over hvor din terminal står nu.
+* `cp minOriginal minKopi`, `cp -r minOriginaleMappe minKopieredeMappe`: Kopier filer, husk `-r` hvis du kopierer en mappe. Du kan kopiere filen/mappen til en anden mappe ved at skrive den nye sti foran _minKopi_ eller _minKopieredeMappe_, fx `../minKopieredeMappe` for at kopiere mappen til niveauet over hvor din terminal står nu.
 * `mv`: Omdøb og flyt filer og mappe. Fungerer som `cp`, bortset fra t du ikke behøver `-r` når du flytter eller omdøber en mappe.
 * `ls`, `ls -l`, `ls -lh`, `ls -a`: List filterne i den mappe du står i, list dem med ekstra informtion, list dem med ekstra information, men skriv filstørrelsene i en enhed som er til at fatte for mennesker (kilobytes, megabytes osv. frem for bytes), og endelig, vis detaljeret information om _alle_ filer, også skjulte filer.
 * `rm minFil`, `rm -rf minMappe`: Slet filer og mapper. Ingen papirkurv, de bliver slettet rigtigt.
