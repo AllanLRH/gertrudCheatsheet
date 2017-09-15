@@ -1,4 +1,6 @@
-# Gertruds cheatsheet
+# Isabells cheatsheet
+
+![http://www.christoffermunch.com/images/2011/ispind.jpg](http://www.christoffermunch.com/images/2011/ispind.jpg)
 
 ## sshfs – mount server mappe på lokal mappe
 
