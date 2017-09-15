@@ -1,7 +1,8 @@
-# Isabells cheatsheet
+<!-- # Isabells cheatsheet -->
 
 <!-- ![http://www.christoffermunch.com/images/2011/ispind.jpg](http://www.christoffermunch.com/images/2011/ispind.jpg) -->
-<img scale=35% src="http://www.christoffermunch.com/images/2011/ispind.jpg">
+
+<img width="250" src="http://www.christoffermunch.com/images/2011/ispind.jpg">
 
 ## sshfs – mount server mappe på lokal mappe
 
