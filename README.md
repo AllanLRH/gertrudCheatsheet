@@ -2,6 +2,14 @@
 
 # cheatsheet
 
+## Lidt Bash (terminalen brugt på Linux og Mac)
+
+* `pwd`: Print working Directory, dvs. hvilken mappe står jeg i.
+* `mkdir minNyeMappe`, `mkdir -p meget/dyb/mappe/struktur`, : Opret mappen _minNyeMappe_, opret mappe-træet _meget/dyb/mappe/struktur_ med én kommando.
+* `cp minOriginal minKopi`, `cp -r minOriginaleMappe minKopieredeMappe`: Kopier filer, husk `-r` hvis du kopierer en mappe. Du kan kopiere filen/mappen til en anden mappe ved at skrive den nye sti foran _minKopi_ eller _minKopieredeMappe_, fx `../minKopieredeMappe` for at kopiere mappen til niveauet over hvor din terminal står nu.
+* `mv`: Omdøb og flyt filer og mappe. Fungerer som `cp`, bortset fra t du ikke behøver `-r` når du flytter eller omdøber en mappe.
+* `ls`, `ls -l`, `ls -lh`, `ls -a`: List filterne i den mappe du står i, list dem med ekstra informtion, list dem med ekstra information, men skriv filstørrelsene i en enhed som er til at fatte for mennesker (kilobytes, megabytes osv. frem for bytes), og endelig, vis detaljeret information om _alle_ filer, også skjulte filer.
+* `rm minFil`, `rm -rf minMappe`: Slet filer og mapper. Ingen papirkurv, de bliver slettet rigtigt.
 
 ## sshfs – mount server mappe på lokal mappe
 
@@ -40,19 +48,7 @@ Når du er i en Ipython-terminal kan du skrive `%who` for at se alle variabel-na
 Der er mange andre kommandoer som starter med `%`, og de kaldes alle for "magic commands" – du kan læse om dem [her][magic_commands].
 
 
-
-
-
-## Lidt Bash (terminalen brugt på Linux og Mac)
-
-* `pwd`: Print working Directory, dvs. hvilken mappe står jeg i.
-* `mkdir minNyeMappe`, `mkdir -p meget/dyb/mappe/struktur`, : Opret mappen _minNyeMappe_, opret mappe-træet _meget/dyb/mappe/struktur_ med én kommando.
-* `cp minOriginal minKopi`, `cp -r minOriginaleMappe minKopieredeMappe`: Kopier filer, husk `-r` hvis du kopierer en mappe. Du kan kopiere filen/mappen til en anden mappe ved at skrive den nye sti foran _minKopi_ eller _minKopieredeMappe_, fx `../minKopieredeMappe` for at kopiere mappen til niveauet over hvor din terminal står nu.
-* `mv`: Omdøb og flyt filer og mappe. Fungerer som `cp`, bortset fra t du ikke behøver `-r` når du flytter eller omdøber en mappe.
-* `ls`, `ls -l`, `ls -lh`, `ls -a`: List filterne i den mappe du står i, list dem med ekstra informtion, list dem med ekstra information, men skriv filstørrelsene i en enhed som er til at fatte for mennesker (kilobytes, megabytes osv. frem for bytes), og endelig, vis detaljeret information om _alle_ filer, også skjulte filer.
-* `rm minFil`, `rm -rf minMappe`: Slet filer og mapper. Ingen papirkurv, de bliver slettet rigtigt.
-
-## Start Matlab
+## Start Matlab (fra Gertruds udgave)
 
 De mest nyttige argumenter når du starter Matlab – altså, det du skriver efter `matlab` – er:
 
@@ -62,7 +58,7 @@ De mest nyttige argumenter når du starter Matlab – altså, det du skriver eft
 * `-logfile minLogFil.txt`: Gem et kopi af alt som er skrevet til terminalen i filen `minLogFil.txt`.
 * `-r "minKommando; quit"`: Indholdet af `" "` er de kommandoer som bliver kørt når matlab er startet. `quit` er tilføjet for at lukke Matlab når kommandoen `minKommando` har regnet færdig.
 
-## Lidt Matlab
+## Lidt Matlab (fra Gertruds udgave)
 
 * `sprintf`: Konstruer strenge med placeholders, fx vil `sprintf('Hej %s! %d er lidt stoerre end %.3f * %d, og desuden svaret paa livet, universet og alt andet!', 'Gertrud', 42, 21.899999, 2)` returnere _Hej Gertrud! 42 er lidt stoerre end 21.900 * 2, og desuden svaret paa livet, universet og alt andet!_. Bemærk afrundingen til tre decimaler, som er specificeret med placeholderen `%.3f`. `%f` for float, `%d` for heltal og `%s` for string.
 
