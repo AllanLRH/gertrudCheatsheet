@@ -2,7 +2,7 @@
 
 <!-- ![http://www.christoffermunch.com/images/2011/ispind.jpg](http://www.christoffermunch.com/images/2011/ispind.jpg) -->
 
-<img width="250" src="http://www.christoffermunch.com/images/2011/ispind.jpg">
+<img width="650" src="http://www.christoffermunch.com/images/2011/ispind.jpg">
 
 ## sshfs – mount server mappe på lokal mappe
 
