@@ -1,6 +1,6 @@
 <img width="650" src="http://www.christoffermunch.com/images/2011/ispind.jpg">
 
-# cheatsheet
+# Cheatsheet
 
 ## Lidt Bash (terminalen brugt på Linux og Mac)
 
@@ -46,6 +46,84 @@ For at blive droppet ind i ipython-terminalen når koden er førdig med at køre
 Når du er i en Ipython-terminal kan du skrive `%who` for at se alle variabel-navne, og `%whos` for at se alle variablenavne samt noget information om variablene.
 
 Der er mange andre kommandoer som starter med `%`, og de kaldes alle for "magic commands" – du kan læse om dem [her][magic_commands].
+
+## Lidt Python
+
+### Gemme en figur i en bestemt mappe
+
+```python
+
+# ****************************************************************************
+# *                       Importer de nødvendige pakker                      *
+# ****************************************************************************
+
+import matplotlib as mpl
+mpl.use('ggplot')  # denne linje er valgfri, men den giver flotte figurer. Den skal være øverst i dit script, sammen med import-linjen oven over den.
+import pyplot as plt
+import numpy as np
+
+# ****************************************************************************
+#                        Lav noget data og plot det                          *
+# ****************************************************************************
+
+x = np.arange(12)
+y = x**2 - 3*x + 2.5
+# Lav et figur-kanvas med et plot på
+fig, ax = plt.subplots()
+ax.plot(x, y, 'ko-')
+# Gem figuren i mappen "minmappe" med filnavnet "minfigur.pdf". Python regner selv ud at den skal gemme figuren som PDF-fil, fordi filnavnte sluter på ".pdf".
+fig.savefig('minmappe/minfigur.pdf')
+```
+
+En mere avanceret udgave opretter mappen til at gemme figurer i, hvis den ikke allerede findes:
+
+```python
+
+# ****************************************************************************
+# *                       Importer de nødvendige pakker                      *
+# ****************************************************************************
+
+import matplotlib as mpl
+# nedenstående linje er valgfri, men den giver flotte figurer. Den skal være øverst
+# i dit script, sammen med import-linjen oven over den.
+mpl.use('ggplot')
+import pyplot as plt
+import numpy as np
+import os
+
+# ****************************************************************************
+#                        Lav noget data og plot det                          *
+# ****************************************************************************
+
+x = np.arange(12)
+y = x**2 - 3*x + 2.5
+# Lav et figur-kanvas med et plot på
+fig, ax = plt.subplots()
+ax.plot(x, y, 'ko-')
+
+# Definer figur-stien og figurnavnet
+figpath = 'minmappe'
+figname = 'minfigur.pdf'
+
+# **************************************************************************
+#            Vær sikker på at du har et sted at gemme dine plots           *
+# **************************************************************************
+
+
+# Hvis der ikke eksisterer nogen fil eller mappe med navnet figpath (altså "minmappe"), så
+# opret den
+if not os.path.exists(figpath):
+    os.mkdir(figpath)
+# Hvis der eksisterer en fil eller mappe med navnet figpath (altså "minmappe"), så tjek om det
+# er en mappe, for hvis det ikke er, så kan du ikke bruge den til at gemme i, og så skal iv
+# have en fejl, som beskriver hvad der er galt... for så kan du jo meget nemmere løse problemet.
+elif not os.path.isdir(figpath):
+    raise FileExistsError("There's a file named " + figpath + ", so it's not possible to create a folder with the same name, in which you can save your figures.")
+
+# Gem figuren i mappen "minmappe" med filnavnet "minfigur.pdf". Python regner selv ud at den
+# skal gemme figuren som PDF-fil, fordi filnavnte sluter på ".pdf".
+fig.savefig(figpath + '/' + figname)
+```
 
 
 ## Start Matlab (fra Gertruds udgave)
