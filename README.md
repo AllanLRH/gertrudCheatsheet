@@ -58,7 +58,9 @@ Der er mange andre kommandoer som starter med `%`, og de kaldes alle for "magic 
 # ****************************************************************************
 
 import matplotlib as mpl
-mpl.use('ggplot')  # denne linje er valgfri, men den giver flotte figurer. Den skal være øverst i dit script, sammen med import-linjen oven over den.
+# nedenstående linje er valgfri, men den giver flotte figurer. Den skal være øverst
+# i dit script, sammen med import-linjen oven over den.
+mpl.use('ggplot')
 import pyplot as plt
 import numpy as np
 
@@ -71,7 +73,8 @@ y = x**2 - 3*x + 2.5
 # Lav et figur-kanvas med et plot på
 fig, ax = plt.subplots()
 ax.plot(x, y, 'ko-')
-# Gem figuren i mappen "minmappe" med filnavnet "minfigur.pdf". Python regner selv ud at den skal gemme figuren som PDF-fil, fordi filnavnte sluter på ".pdf".
+# Gem figuren i mappen "minmappe" med filnavnet "minfigur.pdf". Python regner selv ud at den
+# skal gemme figuren som PDF-fil, fordi filnavnte sluter på ".pdf".
 fig.savefig('minmappe/minfigur.pdf')
 ```
 
