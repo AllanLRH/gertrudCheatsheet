@@ -118,7 +118,7 @@ figname = 'minfigur.pdf'
 if not os.path.exists(figpath):
     os.mkdir(figpath)
 # Hvis der eksisterer en fil eller mappe med navnet figpath (altså "minmappe"), så tjek om det
-# er en mappe, for hvis det ikke er, så kan du ikke bruge den til at gemme i, og så skal iv
+# er en mappe, for hvis det ikke er, så kan du ikke bruge den til at gemme i, og så skal vi
 # have en fejl, som beskriver hvad der er galt... for så kan du jo meget nemmere løse problemet.
 elif not os.path.isdir(figpath):
     raise FileExistsError("There's a file named " + figpath + ", so it's not possible to create a folder with the same name, in which you can save your figures.")
