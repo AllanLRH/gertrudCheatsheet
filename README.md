@@ -13,8 +13,8 @@
 
 ## sshfs – mount server mappe på lokal mappe
 
-* `cellount`: Servermappen `/nbi/lscr_cell/cmplx/ispind/scripts` er nu mountet til (dvs. synkroniseret med) din lokale computer med stien `~/scriptsmound` (`~` er en forkortelse for din brugermappe, som på din profil er `/Users/ispind`).
-* `cellumount`: Luk for forbindelsen til serveren, som du åbnede med `cellmount`. Det er en _meget god_ idé at lukke alle (lokalt, dvs. på din egen computer) åbne filer, som ligger i `~/scriptsmount`, inden du unmounter.
+* `cellmount`: Servermappen `/nbi/lscr_cell/cmplx/ispind/scripts` er nu mountet til (dvs. synkroniseret med) din lokale computer med stien `~/scriptsmound` (`~` er en forkortelse for din brugermappe, som på din profil er `/Users/ispind`).
+* `cellumnount`: Luk for forbindelsen til serveren, som du åbnede med `cellmount`. Det er en _meget god_ idé at lukke alle (lokalt, dvs. på din egen computer) åbne filer, som ligger i `~/scriptsmount`, inden du unmounter.
 
 ## ssh – log ind på serveren med en terminal
 
